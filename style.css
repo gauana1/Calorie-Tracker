@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:white ;
+    color: #333;
+
+}
+.table {
+
+    border-radius: 5px;
+    border-color: black;
+    overflow: hidden; 
+}
+
+td, th {
+    border: 10px solid black;
+    overflow: hidden;
+}
+
+.data-input{
+    font-size: 20px;
+    border-radius: 3px;
+
+}
+option {
+    max-height: 50px; /* Adjust this value to set the maximum height for the scrollable area */
+    overflow-y: auto; /* Add a vertical scrollbar when content exceeds the max height */
+}
+.tr-inputs {
+    border: 1px solid black;
+}
+
+.tr-inputs th,
+.tr-inputs td {
+    border: 1px solid black;
+}

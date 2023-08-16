@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <title>Calorie Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" media= "screen" />
+</head>
+<body>
+    <div class = "container-fluid">
+        <h1 id = "title">Calorie Counter</h1>
+        <table class="table table-bordered">
+            <tr>
+                <th class="header-label" width = 7%>Dish Name</th>
+                <th class="header-label" width = 20%>Included Ingredients</th>
+                <th class="header-label" width= 5%>Search</th>
+                <th class="header-label" width= 45%>Select Dish</th>
+                <th class="header-label" width =10%>Servings</th>
+                <th class="header-label" width =13%>Calories</th>
+            </tr>
+            <tr class="tr-inputs" id = "row1">
+                <th>
+                <div><input type="Name" class = "data-input"></div>
+                </th>
+                <th>
+                <div><input type="Ingredients" class = "data-input"></div>
+                </th>
+                <th>
+                    <div><button type = "submit-button" class="btn btn-outline-secondary click" id = "1">Search</button></div>
+                </th>
+                <th type = 'select dish'>
+                    <form>
+                        <select class = "form-select overflow-auto" id = "titles 1">
+                            <option value = ''  selected disabled>Choose Recipe</option>
+                        </select>
+                    </form>
+                </th>
+                <th type = "servings">
+                    <form>
+                        <select class = "form-select" id = "servings-dropdown 1">
+                            <option value = '' select disabled>Servings</option>
+                            <option value = '' >1</option>
+                            <option value = '' >2</option>
+                            <option value = '' >3</option>
+                            <option value = '' >4</option>
+                            <option value = '' >5</option>
+                        </select>
+                    </form>
+                </th>
+                <th>
+                    <span id = "calories 1"></span>
+                </th>
+            </tr>
+        </table>
+   
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-outline-primary" id = "print-cals">Get Total Calories</button>
+                <span id = "total-cals"></span>
+            </div>
+            <div class="col text-end">
+                <button type="button" class="btn btn-outline-danger" id = "delete">Delete Row</button>
+                <button type="button" class="btn btn-outline-info" id = "add">Add Row</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
